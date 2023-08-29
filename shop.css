@@ -1,0 +1,250 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+
+/* Set a background color and center the content */
+body {
+    background-color: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Style the container for the sections */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Style the sections */
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #444;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section form {
+    margin-top: 10px;
+}
+
+/* Style form labels */
+.section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style form inputs */
+.section input[type="text"],
+.section input[type="number"],
+.section select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style the buttons */
+.section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.section button:hover {
+    background-color: #0056b3;
+}
+
+/* Style success and error messages */
+.section .message {
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style scroll link */
+.scroll-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.scroll-link:hover {
+    color: #0056b3;
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the inventory table container */
+.inventory-table {
+    margin-top: 20px;
+}
+
+/* Styles for the table */
+.inventory-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+/* Styles for table headers */
+.inventory-table th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+/* Styles for table cells */
+.inventory-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Styles for empty table row */
+.inventory-table .empty-row td {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+}
+
+#goBackBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#goBackBtn:hover {
+    background-color: #0056b3;
+}
+
+
+
+#salesSection {
+    background: linear-gradient(to bottom, #71a0ff, #7bbbff);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style for the Add Item to Inventory section */
+#addItemSection {
+    background: linear-gradient(to bottom, #f2faff, #d0eaff);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #444;
+    font-weight: bold;
+}
+
+/* Style for the Remove Item from Inventory section */
+#removeItemSection {
+    background: linear-gradient(to bottom, #f2faff, #d0eaff);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #444;
+    font-weight: bold;
+}
+
+
+/* Styles for the sales report table container */
+#salesReportSection {
+    margin-top: 20px;
+}
+
+/* Styles for the table in the sales report section */
+#salesReportSection table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+/* Styles for table headers in the sales report section */
+#salesReportSection th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styles for table cells in the sales report section */
+#salesReportSection td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Styles for empty table row in the sales report section */
+#salesReportSection .empty-row td {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+}
+
+/* Style for the total profit display */
+.totalProfit {
+    font-weight: bold;
+    color: #007bff;
+}
+

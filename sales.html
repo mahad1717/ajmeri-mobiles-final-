@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sales Report</title>
+    <link rel="stylesheet" href="sales.css">
+</head>
+<body>
+    <section id="salesReportSection">
+        <h2>Sales Reports</h2>
+        <div id="datePickerContainer">
+            <label for="salesDate">Select Date:</label>
+            <input type="date" id="salesDate" value="">
+            <button id="showSalesButton">Show Sales</button>
+        </div>
+        <div id="salesTableContainer">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity Sold</th>
+                        <th>Price per Unit</th>
+                        <th>Unit Profit</th>
+                        <th>Sale Date</th>
+                    </tr>
+                </thead>
+                <tbody id="salesTableBody">
+                    <!-- Sales records will be displayed here -->
+                </tbody>
+            </table>
+            <p>Total Profit: <span id="totalProfit">$0.00</span></p>
+            <p>Total Sales: <span id="totalSales">$0.00</span></p>
+        </div>
+    </section>
+    <button id="goBackBtn">Go Back</button>
+    <script src="sales.js"></script>
+</body>
+</html>

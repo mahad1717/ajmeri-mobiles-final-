@@ -1,0 +1,12 @@
+{
+    "name": "ajmeri-mobiles-app",
+    "version": "1.0.0",
+    "description": "Ajmeri Mobiles Electron App",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "dependencies": {
+        "electron": "^16.2.8"
+    }
+}

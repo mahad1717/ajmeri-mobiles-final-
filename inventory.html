@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajmeri Mobiles - Inventory Management</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <header>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Ajmeri Mobiles</h1>
+    </header>
+    <div class="container">
+        <div class="section" id="inventorySection">
+            <h2>Inventory Management</h2>
+            <!-- Add Item to Inventory Form -->
+            <div class="section" id="addItemSection">
+                <h3>Add Item</h3>
+                <form id="addItemForm">
+                    <label for="itemName">Item Name:</label>
+                    <input type="text" id="itemName" required>
+                    <label for="itemQuantity">Quantity:</label>
+                    <input type="number" id="itemQuantity" required>
+                    <label for="itemPrice">Price:</label>
+                    <input type="number" id="itemPrice" step="0.01" required>
+                    <button type="submit">Add Item</button>
+                </form>
+                <p id="addItemMessage" class="message"></p>
+            </div>
+
+            <!-- Remove Item from Inventory Form -->
+            <div class="section" id="removeItemSection">
+                <h3>Remove Item</h3>
+                <form id="removeItemForm">
+                    <label for="removeItemName">Item Name:</label>
+                    <select id="removeItemName" required>
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                    <button type="submit">Remove Item</button>
+                </form>
+                <p id="removeItemMessage" class="message"></p>
+            </div>
+        </div>
+
+        <div class="section" id="salesSection">
+            <h2>Sales Management</h2>
+            <form id="salesForm">
+                <label for="saleProductName">Product Name:</label>
+                <select id="saleProductName" required></select>
+                <label for="sellingPrice">Selling Price:</label>
+                <input type="number" id="sellingPrice" required>
+                <label for="saleQuantity">Quantity:</label>
+                <input type="number" id="saleQuantity" required>
+                <button type="submit">Record Sale</button>
+            </form>
+            <p id="salesMessage" class="message"></p>
+        </div>
+
+        <div class="section" id="salesReportSection">
+            <h2>Sales Reports</h2>
+            <button id="toggleSalesReportBtn">Toggle Sales Report</button>
+            <div id="salesTableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity Sold</th>
+                            <th>Price per Unit</th>
+                            <th>Total Profit</th>
+                            <th>Sale Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="salesTableBody">
+                        <!-- Sales records will be displayed here -->
+                    </tbody>
+                </table>
+                <p>Total Profit: <span id="totalProfit">$0.00</span></p>
+            </div>
+        </div>
+
+    
+    <button id="goBackBtn">Go Back</button>
+    <script src="script.js"></script>
+</body>
+</html>

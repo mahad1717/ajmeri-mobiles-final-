@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+#salesReportSection {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+}
+
+#datePickerContainer {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#salesDate {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#showSalesButton {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#showSalesButton:hover {
+    background-color: #0056b3;
+}
+
+#salesTableContainer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+#goBackBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#goBackBtn:hover {
+    background-color: #0056b3;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#totalProfit {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.message {
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+}
